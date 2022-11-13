@@ -6,7 +6,9 @@ const app = express();
 
 app.use("/country", countryRouter);
 
-
+app.get("/", (req, response) => {
+  response.json({ message: "loo" });
+});
 
 /* app.options("*", cors()); */
 
