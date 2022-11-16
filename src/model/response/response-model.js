@@ -1,3 +1,3 @@
-export const response = (data) => {
-  return { data: data, date: Date.now() };
+export const response = (data, error) => {
+  return { error: error || null, data: data, date: Date.now() };
 };
